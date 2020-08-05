@@ -42,7 +42,7 @@ function genPoints(n,speed){
 
 function clearCanvas(){
 	ctx.fillStyle=BG_COLOR;
-	ctx.fillRect(0,0,w,h);
+	ctx.clearRect(0,0,w,h);
 } 
 
 function drawCircle(x,y,r,color){
@@ -64,7 +64,7 @@ function drawLine(x1,y1,x2,y2,color,opacity){
 }
 
 function opacityBlob(x,y){
-
+	
 }
 
 function distance(point1,point2){

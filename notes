@@ -1,0 +1,10 @@
+day 1 - look through other submissions, decide on basic colors
+day 2 - decide on large elements and multiple full-screen displays
+day 3 - imagined the general version of final layout while trying to sleep
+day 4 - layed out the backbones, added the flux canvas element that i coded
+
+Structure of css? 
+use of selectors.
+I might be ignoring some inheritance/duplicating lines. Other glaring css mistakes?
+
+100 vh,100vw add scrollbars 
