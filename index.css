@@ -37,6 +37,7 @@ body {
   -webkit-mask-image: -webkit-linear-gradient(
     125deg,
     rgba(0, 0, 0, 0),
+    rgba(0, 0, 0, 0.8) 50%,
     rgba(0, 0, 0, 1)
   );
   background: linear-gradient(125deg, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1)),
@@ -141,5 +142,14 @@ footer {
 }
 #quote-citation a {
   color: var(--offwhite);
-  font-size: 2em;
+  font-size: 2.3em;
+  font-style: italic;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 3px solid lightblue;
+}
+#quote-citation a:hover {
+  font-size: 2.4em;
+  border-bottom-color: red;
+  border-bottom-width: 3px;
 }

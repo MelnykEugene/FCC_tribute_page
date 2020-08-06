@@ -2,7 +2,7 @@ var cv, ctx, w, h, points, cx, cy;
 
 var BG_COLOR = "#000000";
 var LINE_COLOR = "255,255,255";
-var distance_threshold = 110;
+var distance_threshold = 120;
 var FPS = 120;
 var points = [];
 
