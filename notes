@@ -5,6 +5,12 @@ day 4 - layed out the backbones, added the flux canvas element that i coded
 
 Structure of css? 
 use of selectors.
+Is the choice of classes vs ids in the giving settings reasonable?
 I might be ignoring some inheritance/duplicating lines. Other glaring css mistakes?
+excessive use of ids?
+is the way of centering optimal/conventional?
+Any glaringgly unnecesary use of divs?
+How to add responsiveness
+Is span-styling of certain words reasonable?
 
 100 vh,100vw add scrollbars 

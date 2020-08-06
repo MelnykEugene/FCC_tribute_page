@@ -116,7 +116,7 @@ header canvas {
   color: var(--offblack);
   background-color: var(--offwhite);
 }
-.display4 {
+footer {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   width: 100%;
@@ -124,8 +124,22 @@ header canvas {
   color: var(--offwhite);
   background-color: var(--offblack);
 }
+#quote-container {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+}
 #hero-quote {
   text-align: center;
   font-size: 3em;
   font-weight: 100;
+}
+#quote-citation {
+  float: right;
+}
+#quote-citation a {
+  color: var(--offwhite);
+  font-size: 2em;
 }
