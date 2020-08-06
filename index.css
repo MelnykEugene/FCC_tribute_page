@@ -3,18 +3,15 @@
   --offblack: rgba(10, 10, 10, 0.9);
 }
 html {
-  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
 }
 body {
   background-color: black;
   margin: 0px;
   padding: 0px;
-  scroll-snap-type: y mandatory;
 }
 #main {
   font-family: serif;
-  margin: 0px;
-  padding: 0px;
 }
 .white-text {
   color: var(--offwhite);
@@ -25,8 +22,6 @@ body {
   scroll-snap-stop: always;
   width: 100%;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
   position: relative;
 }
 
@@ -50,9 +45,6 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-
-  margin: 0px;
-  padding: 0px;
   filter: brightness(1) contrast(110%);
   z-index: -1;
   /*background: linear-gradient(to right, rgba(0,0,0,0.1),rgba(0,0,0,0.8)), url(board.jpg);
@@ -65,9 +57,6 @@ h1 {
   font-weight: 100;
   text-align: center;
   font-size: 5em;
-
-  border: 0px;
-  padding: 0px;
 }
 
 h2 {
@@ -126,16 +115,12 @@ header canvas {
   width: 100%;
   height: 100vh;
 
-  margin: 0px;
-  padding: 0px;
   color: var(--offblack);
   background-color: var(--offwhite);
 }
 .display4 {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  margin: 0px;
-  padding: 0px;
   width: 100%;
   height: 100vh;
   color: var(--offwhite);
