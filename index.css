@@ -59,7 +59,7 @@ h1 {
   margin-bottom: 0px;
 }
 
-h2 {
+#display1 h2 {
   font-weight: 100;
   padding: 0px;
   margin: 0px;
@@ -130,6 +130,15 @@ header canvas {
   color: var(--offblack);
   background-color: var(--offwhite);
 }
+.display3 h2 {
+  font-weight: 100;
+  padding: 0px;
+  margin: 0px;
+  position: relative;
+  left: 10%;
+  top: 10%;
+  font-size: 4em;
+}
 footer {
   scroll-snap-align: start;
   width: 100%;
@@ -143,16 +152,21 @@ footer {
   margin: auto;
   top: 50%;
   transform: translateY(-50%);
+  text-align: center;
 }
 #hero-quote {
-  text-align: center;
   font-size: 3em;
   font-weight: 100;
+  display: inline;
 }
-#quote-citation {
+#quote-citation-container {
+  position: relative;
+  top: 20px;
   float: right;
 }
+
 #quote-citation a {
+  display: block;
   color: var(--offwhite);
   font-size: 2.3em;
   font-style: italic;
@@ -164,4 +178,20 @@ footer {
   font-size: 2.4em;
   border-bottom-color: red;
   border-bottom-width: 3px;
+}
+#fake-carret {
+  display: inline-block;
+  margin-left: 0.15em;
+  border: none;
+  background-color: white;
+  height: 2.4em;
+  width: 4px;
+  position: relative;
+  top: 0.3em;
+  animation: blinking 1s step-start infinite;
+}
+@keyframes blinking {
+  50% {
+    opacity: 0%;
+  }
 }
