@@ -6,19 +6,26 @@
               href="https://fonts.googleapis.com/css2?family=PT+Serif">
         <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
         <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <script 
+        src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <script src='http://code.jquery.com/color/jquery.color-2.1.2.min.js'></script>
+        <script src='https://unpkg.com/animate-backgrounds/animate-backgrounds.jquery.js'></script>
         <script src='flux.js'></script>
+        <script src='fadein.js'></script>
+
     </head>
     <body>
         <div id='main'>
             <header id='display1' class="white-text">
+                
+                <canvas id='flux'></canvas>
+                <div id='hero-image'></div>
                 <div class='hero-text'>
                     <h1 >
                         Alexander Grothendieck
                     </h1>
                     <h2>Father of Algebraic Geometry</h2>
                 </div>
-                <canvas id='flux'></canvas>
-                <div id='hero-image'></div>
             </header>
 
             <div class='display2'>
@@ -37,5 +44,6 @@
         </footer>
         </div>
         <script>start();</script>
+        <script src='fadein.js'></script>
     </body>
 </html>
