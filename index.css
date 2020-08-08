@@ -19,7 +19,6 @@ body {
 
 #display1 {
   scroll-snap-align: start;
-  scroll-snap-stop: always;
   width: 100%;
   height: 100%;
   position: relative;
@@ -27,14 +26,20 @@ body {
 }
 
 .hero-text {
-  text-align: center;
+  text-align: right;
   position: absolute;
-  top: 50%;
-  left: 50%;
+  right: 0%;
+  bottom: 20%;
   opacity: 0%;
-  z-index: 1;
+  margin-right: 4%;
   animation: hero-text-in 1s 1.5s forwards;
 }
+@keyframes hero-text-in {
+  100% {
+    opacity: 100%;
+  }
+}
+
 #hero-image {
   -webkit-mask-image: -webkit-linear-gradient(
     125deg,
@@ -49,23 +54,21 @@ body {
   display: block;
   width: 100%;
   height: 100%;
-  filter: brightness(1) contrast(110%);
+  filter: contrast(110%);
   z-index: -1;
 }
 h1 {
   font-weight: 100;
   font-size: 5em;
-  transform: translateY(-50%);
-  margin-bottom: 0px;
+  margin-bottom: 15px;
+  padding: 0px;
 }
 
 #display1 h2 {
   font-weight: 100;
-  padding: 0px;
-  margin: 0px;
   font-size: 2em;
-  transform: translateY(-50%);
-  float: right;
+  padding: 0px;
+  margin-top: 0px;
 }
 header canvas {
   position: absolute;
@@ -82,17 +85,15 @@ header canvas {
     opacity: 100%;
   }
 }
-@keyframes hero-text-in {
-  100% {
-    opacity: 100%;
-  }
-}
 
 .display2 {
   scroll-snap-align: start;
+  scroll-snap-stop: always;
+
   background-color: var(--offwhite);
   width: 100%;
-  height: 100vh;
+  height: 100%;
+
   color: rgba(15, 15, 15, 0.85);
 }
 .display2 img {
@@ -102,6 +103,8 @@ header canvas {
   transform: translateY(-50%);
   right: 10px;
   filter: contrast(110%);
+  width: 39%;
+  height: auto;
 }
 .display2 article {
   float: right;
@@ -123,24 +126,26 @@ header canvas {
   font-weight: 600;
 }
 .display3 {
-  scroll-snap-align: start;
+  /* scroll-snap-align: start; */
   width: 100%;
   height: 100vh;
-
+  position: relative;
   color: var(--offblack);
   background-color: var(--offwhite);
 }
 .display3 h2 {
+  position: absolute;
   font-weight: 100;
   padding: 0px;
   margin: 0px;
-  position: relative;
+  position: absolute;
   left: 10%;
   top: 10%;
-  font-size: 4em;
+  font-size: 6em;
 }
 footer {
   scroll-snap-align: start;
+  scroll-snap-stop: always;
   width: 100%;
   height: 100vh;
   color: var(--offwhite);
@@ -163,6 +168,7 @@ footer {
   position: relative;
   top: 20px;
   float: right;
+  padding: 40px;
 }
 
 #quote-citation a {

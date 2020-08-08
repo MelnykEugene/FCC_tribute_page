@@ -1,0 +1,49 @@
+#quote-container {
+  position: relative;
+  width: 70%;
+  margin: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
+}
+#hero-quote {
+  font-size: 3em;
+  font-weight: 100;
+  display: inline;
+}
+#quote-citation-container {
+  position: relative;
+  top: 20px;
+  float: right;
+}
+
+#quote-citation a {
+  display: block;
+  color: var(--offwhite);
+  font-size: 2.3em;
+  font-style: italic;
+  text-decoration: none;
+  padding-bottom: 1px;
+  border-bottom: 3px solid lightblue;
+}
+#quote-citation a:hover {
+  font-size: 2.4em;
+  border-bottom-color: red;
+  border-bottom-width: 3px;
+}
+#fake-carret {
+  display: inline-block;
+  margin-left: 0.15em;
+  border: none;
+  background-color: white;
+  height: 2.4em;
+  width: 4px;
+  position: relative;
+  top: 0.3em;
+  animation: blinking 1s step-start infinite;
+}
+@keyframes blinking {
+  50% {
+    opacity: 0%;
+  }
+}
