@@ -4,7 +4,6 @@
 }
 html {
   scroll-snap-type: y proximity;
-  box-sizing: border-box;
 }
 body {
   background-color: black;
@@ -128,23 +127,27 @@ header canvas {
 }
 
 .content h2 {
+  display: block;
   font-weight: 100;
   margin: 0px;
   font-size: 5em;
-  margin-left: 10%;
+  margin-left: 7%;
   margin-bottom: 50px;
 }
+.biography {
+  width: 100%;
+}
 .list-container {
-  width: 800px;
+  display: inline-block;
+  width: 700px;
   margin-top: 30px;
-  margin: auto;
   padding-bottom: 300px;
+  margin-left: 5%;
 }
 .list-item {
-  display: inline-block;
   /* border: 1px blue solid; */
   padding-left: 50px;
-  border-left: solid 10px rgba(30, 30, 30, 0.9);
+  border-left: solid 15px rgba(30, 30, 30, 0.9);
   margin-top: 20px;
   margin-bottom: 25px;
   height: 120px;
@@ -164,7 +167,15 @@ header canvas {
   text-align: center;
   vertical-align: middle;
 }
-
+.articles {
+  position: sticky;
+  top: 10vh;
+  float: right;
+  border: 1px solid red;
+  width: 40%;
+  margin-right: 20px;
+  font-size: 1.5em;
+}
 footer {
   scroll-snap-align: start;
   width: 100%;
