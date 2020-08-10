@@ -3,8 +3,7 @@
   --offblack: rgba(10, 10, 10, 0.9);
 }
 html {
-  scroll-snap-type: y proximity;
-  box-sizing: border-box;
+  scroll-snap-type: y mandatory;
 }
 body {
   background-color: black;
@@ -12,13 +11,13 @@ body {
   padding: 0px;
 }
 #main {
-  font-family: "Times New Roman", Times, serif;
+  font-family: serif;
 }
 .white-text {
   color: var(--offwhite);
 }
 
-header {
+#display1 {
   scroll-snap-align: start;
   width: 100%;
   height: 100%;
@@ -58,14 +57,14 @@ header {
   filter: contrast(110%);
   z-index: -1;
 }
-header h1 {
+h1 {
   font-weight: 100;
   font-size: 5em;
   margin-bottom: 15px;
   padding: 0px;
 }
 
-header h2 {
+#display1 h2 {
   font-weight: 100;
   font-size: 2em;
   padding: 0px;
@@ -87,38 +86,38 @@ header canvas {
   }
 }
 
-.content {
-  background-color: var(--offwhite);
-  width: 100%;
-  color: rgba(15, 15, 15, 0.95);
-}
-.info {
+.display2 {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  min-height: 100%;
-  display: block;
-  overflow: auto;
+
+  background-color: var(--offwhite);
+  width: 100%;
+  height: 100%;
+
+  color: rgba(15, 15, 15, 0.85);
 }
-.info img {
+.display2 img {
+  float: left;
   position: relative;
-  top: 25vh;
+  top: 50%;
+  transform: translateY(-50%);
   right: 10px;
   filter: contrast(110%);
   width: 39%;
-  display: inline-block;
+  height: auto;
 }
-.info article {
-  position: relative;
-  top: 13vh;
+.display2 article {
   float: right;
   font-size: 2.2em;
   width: 50%;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
   margin-left: 5%;
   margin-right: 5%;
   color: rgba(20, 20, 20, 1);
-  display: inline-block;
 }
-.content article strong {
+.display2 article strong {
   font-size: 2em;
   font-weight: 500;
 }
@@ -126,47 +125,59 @@ header canvas {
   font-size: 1.2em;
   font-weight: 600;
 }
-
-.content h2 {
+.display3 {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  color: var(--offblack);
+  background-color: var(--offwhite);
+  overflow-x: hidden;
+}
+.display3 h2 {
   font-weight: 100;
+  position: relative;
+  top: 5%;
+  left: 5%;
   margin: 0px;
-  font-size: 5em;
-  margin-left: 10%;
-  margin-bottom: 50px;
+  font-size: 6em;
 }
 .list-container {
-  width: 800px;
+  width: 70%;
+  border: 1px red solid;
   margin-top: 30px;
-  margin: auto;
-  padding-bottom: 300px;
+  margin-left: 20%;
 }
 .list-item {
-  display: inline-block;
-  /* border: 1px blue solid; */
+  border: 1px blue solid;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   padding-left: 50px;
   border-left: solid 10px rgba(30, 30, 30, 0.9);
   margin-top: 20px;
-  margin-bottom: 25px;
-  height: 120px;
+  margin-bottom: 20px;
 }
 .year {
-  /* border: 1px solid black; */
   display: inline-block;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  position: relative;
   font-size: 3em;
-  margin-right: 150px;
-  vertical-align: middle;
-  line-height: 120px;
+  margin-right: 40px;
 }
 .item-text {
-  /* border: 1px solid black; */
   display: inline-block;
+  position: relative;
   font-size: 2em;
   text-align: center;
-  vertical-align: middle;
+  margin-left: 10%;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-
+.item-type {
+  font-weight: 700;
+}
 footer {
   scroll-snap-align: start;
+  scroll-snap-stop: always;
   width: 100%;
   height: 100vh;
   color: var(--offwhite);
