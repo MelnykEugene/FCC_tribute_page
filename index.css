@@ -115,7 +115,6 @@ header canvas {
   margin-left: 5%;
   margin-right: 5%;
   color: rgba(20, 20, 20, 1);
-  display: inline-block;
 }
 .content article strong {
   font-size: 2em;
@@ -168,6 +167,8 @@ header canvas {
   vertical-align: middle;
 }
 .articles {
+  font-style: italic;
+  padding-top: 50px;
   position: sticky;
   top: 10vh;
   float: right;
