@@ -21,11 +21,11 @@ function check_position() {
     ) {
       $list_item.addClass("in-view");
       var $article = $($list_articles[article_number]);
-      $article.addClass("visible");
+      $article.addClass("visiblee");
     } else {
       $list_item.removeClass("in-view");
       var $article = $($list_articles[article_number]);
-      $article.addClass("visible");
+      $article.removeClass("visiblee");
     }
   });
 }
