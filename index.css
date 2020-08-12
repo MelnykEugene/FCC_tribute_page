@@ -4,14 +4,17 @@
 }
 html {
   scroll-snap-type: y proximity;
+  height: 100%;
 }
 body {
   background-color: black;
   margin: 0px;
   padding: 0px;
+  height: 100%;
 }
 #main {
   font-family: "Times New Roman", Times, serif;
+  height: 100%;
 }
 .white-text {
   color: var(--offwhite);
@@ -94,7 +97,7 @@ header canvas {
 .info {
   scroll-snap-align: start;
   scroll-snap-stop: always;
-  min-height: 100%;
+  height: 100vh;
   display: block;
   overflow: auto;
 }
@@ -114,15 +117,16 @@ header canvas {
   width: 50%;
   margin-left: 5%;
   margin-right: 5%;
-  color: rgba(20, 20, 20, 1);
+  color: rgba(20, 20, 20, 0.9);
+}
+.highlight-text {
+  color: rgba(10, 10, 10, 0.98);
+  font-size: 1.2em;
+  font-weight: 600;
 }
 .content article strong {
   font-size: 2em;
   font-weight: 500;
-}
-.highlight-text {
-  font-size: 1.2em;
-  font-weight: 600;
 }
 
 .content h2 {
@@ -130,52 +134,77 @@ header canvas {
   font-weight: 100;
   margin: 0px;
   font-size: 5em;
-  margin-left: 7%;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+  margin-left: 50px;
 }
 .biography {
   width: 100%;
+  padding-bottom: 100px;
 }
 .list-container {
   display: inline-block;
-  width: 700px;
-  margin-top: 30px;
-  padding-bottom: 300px;
+  width: 750px;
+  margin-top: 40px;
   margin-left: 5%;
+  padding-bottom: 100px;
 }
 .list-item {
   /* border: 1px blue solid; */
   padding-left: 50px;
   border-left: solid 15px rgba(30, 30, 30, 0.9);
   margin-top: 20px;
-  margin-bottom: 25px;
+  margin-bottom: 70px;
   height: 120px;
+  transition: all 500ms linear;
 }
 .year {
   /* border: 1px solid black; */
   display: inline-block;
   font-size: 3em;
-  margin-right: 150px;
   vertical-align: middle;
   line-height: 120px;
+  transition: all 500ms;
 }
 .item-text {
+  margin-left: 200px;
   /* border: 1px solid black; */
   display: inline-block;
   font-size: 2em;
   text-align: center;
   vertical-align: middle;
+  transition: all 500ms;
 }
+
+.list-item.in-view {
+  border-color: red;
+}
+.list-item.in-view .year {
+  transform: scale(1.1);
+}
+.list-item.in-view .item-text {
+  transform: scale(1.1);
+  border-color: red;
+}
+
 .articles {
   font-style: italic;
-  padding-top: 50px;
+  padding-top: 10px;
   position: sticky;
-  top: 10vh;
+  top: 200px;
   float: right;
   border: 1px solid red;
-  width: 40%;
+  width: 45%;
   margin-right: 20px;
   font-size: 1.5em;
+}
+.article-item {
+  position: absolute;
+  top: 0px;
+  opacity: 0%;
+  transition: all 300ms linear;
+}
+.article-item .visible {
+  opacity: 100%;
 }
 footer {
   scroll-snap-align: start;
