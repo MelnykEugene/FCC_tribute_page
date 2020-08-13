@@ -145,7 +145,7 @@ header canvas {
   display: inline-block;
   width: 700px;
   margin-top: 40px;
-  margin-left: 4%;
+  margin-left: 8%;
   padding-bottom: 100px;
 }
 .list-item {
@@ -178,10 +178,10 @@ header canvas {
 }
 .item-text {
   transition: all 200ms;
-  margin-left: 150px;
+  margin-left: 15%;
   /* border: 1px solid black; */
   display: inline-block;
-  font-size: 1.7em;
+  font-size: 1.5em;
   text-align: center;
   vertical-align: middle;
 }
@@ -202,8 +202,8 @@ header canvas {
   position: sticky;
   top: 100px;
   float: right;
-  width: 45%;
-  margin-right: 50px;
+  width: 40%;
+  margin-right: 8%;
 }
 
 .article-item {
