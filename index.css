@@ -16,11 +16,10 @@ body {
   font-family: "Times New Roman", Times, serif;
   height: 100%;
 }
-.white-text {
-  color: var(--offwhite);
-}
 
 header {
+  color: var(--offwhite);
+
   scroll-snap-align: start;
   width: 100%;
   height: 100%;
@@ -98,7 +97,6 @@ header canvas {
   scroll-snap-align: start;
   scroll-snap-stop: always;
   height: 100vh;
-  display: block;
   overflow: auto;
 }
 .info img {
@@ -124,13 +122,8 @@ header canvas {
   font-size: 1.2em;
   font-weight: 600;
 }
-.content article strong {
-  font-size: 2em;
-  font-weight: 500;
-}
 
 .content h2 {
-  display: block;
   font-weight: 100;
   margin: 0px;
   font-size: 5em;
@@ -139,7 +132,7 @@ header canvas {
 }
 .biography {
   width: 100%;
-  padding-bottom: 100px;
+  padding-bottom: 150px;
 }
 .list-container {
   display: inline-block;
@@ -163,6 +156,8 @@ header canvas {
   background: rgba(30, 30, 30, 0.9);
   display: inline-block;
   vertical-align: middle;
+  top: 0px;
+  left: 0px;
 }
 .bar_highlight {
   background: red;
@@ -184,6 +179,7 @@ header canvas {
   font-size: 1.5em;
   text-align: center;
   vertical-align: middle;
+  width: 300px;
 }
 
 /* .list-item.in-view {
@@ -213,7 +209,7 @@ header canvas {
   left: 0px;
   color: rgba(20, 20, 20, 0);
   transition: all 200ms linear;
-  font-size: 1.7em;
+  font-size: 1.6em;
   text-indent: 40px;
 }
 
@@ -251,12 +247,11 @@ footer {
 }
 
 #quote-citation a {
-  display: block;
   color: var(--offwhite);
   font-size: 2.3em;
   font-style: italic;
   text-decoration: none;
-  padding-bottom: 1px;
+  padding-bottom: 1.5px;
   border-bottom: 3px solid lightblue;
 }
 #quote-citation a:hover {

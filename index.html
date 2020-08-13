@@ -2,20 +2,16 @@
     <head>
         <title>Alexander Grothendieck</title>
         <link rel='stylesheet' type='text/css'  href='index.css'>
-        <link rel="stylesheet"
-              href="https://fonts.googleapis.com/css2?family=PT+Serif">
-        <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
-        <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        <link rel="stylesheet">
        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-color/2.1.2/jquery.color.min.js" ></script>
         <script src='https://unpkg.com/animate-backgrounds/animate-backgrounds.jquery.js'></script>
         <script src='flux.js'></script>
         <script src='fadein.js'></script>
-
     </head>
     <body>
         <div id='main'>
-            <header class="white-text">
+            <header class>
                 <canvas id='flux'></canvas>
                 <div id='hero-image'></div>
                 <div class='hero-text'>
@@ -35,79 +31,108 @@
                                     <h2>Brief timeline:</h2>
                     <div class='list-container'>
                         <div class='list-item' data-number='0'>
-                                                        <div class='bar'></div>
-
+                            <div class='bar'></div>
                             <div class='year'>1928</div> 
                             <div class='item-text'>
                                 <strong>Birth</strong>
-                                <div class='details'> École Normale Supérieure</div>
+                                <div class='place'> Berlin, Germany</div>
                             </div>
                         </div>
                         <div class='list-item' data-number='1'>
-                                                        <div class='bar'></div>
-
-                            <div class='year'>1948</div> 
+                            <div class='bar'></div>
+                            <div class='year'>1939</div> 
                             <div class='item-text'>
-                                <strong>Education</strong>
-                                <div class='details'> École Normale Supérieure</div>
+                                <strong>World War II</strong>
+                                <div class='place'>Paris, France</div>
                             </div>
-                        </div><div class='list-item' data-number='2'>
-                                <div class='bar'></div>
-
-                            <div class='year'>1948</div> 
-                            <div class='item-text'>
-                                <strong>Education</strong>
-                                <div class='details'> École Normale Supérieure</div>
-                            </div>
-
-                        </div><div class='list-item' data-number='3'>
-                                                        <div class='bar'></div>
-
-                            <div class='year'>1948</div> 
-                            <div class='item-text'>
-                                <strong>Education</strong>
-                                <div class='details'> École Normale Supérieure</div>
-                            </div>
-                        </div><div class='list-item' data-number='4'>
+                        </div>
+                        <div class='list-item' data-number='2'>
                             <div class='bar'></div>
                             <div class='year'>1948</div> 
                             <div class='item-text'>
                                 <strong>Education</strong>
-                                <div class='details'> École Normale Supérieure</div>
+                                <div class='place'> École Normale Supérieure</div>
+                            </div>
+
+                        </div>
+                        <div class='list-item' data-number='3'>
+                            <div class='bar'></div>
+                            <div class='year'>1958</div> 
+                            <div class='item-text'>
+                                <strong>IHÉS years</strong>
+                                <div class='place'>Institut des hautes études scientifiques</div>
+                            </div>
+                        </div>
+                        <div class='list-item' data-number='4'>
+                            <div class='bar'></div>
+                            <div class='year'>1948</div> 
+                            <div class='item-text'>
+                                <strong>"Golden Age"</strong>
+                                <div class='place'>Institut des hautes études scientifiques</div>
                             </div>
                         </div><div class='list-item' data-number='5'>
                             <div class='bar'></div>
-                            <div class='year'>1948</div> 
+                            <div class='year'>1970</div> 
                             <div class='item-text'>
-                                <strong>Education</strong>
-                                <div class='details'> École Normale Supérieure</div>
+                                <strong>Political Acitivism</strong>
+                                <div class='place'> École Normale Supérieure</div>
                             </div>
                         </div>
-                    </div> 
+                        <div class='list-item' data-number='6'>
+                            <div class='bar'></div>
+                            <div class='year'>1980s</div> 
+                            <div class='item-text'>
+                                <strong>Independent Manuscripts</strong>
+                            </div>
+                        </div>
+                         <div class='list-item' data-number='7'>
+                            <div class='bar'></div>
+                            <div class='year'>1991</div> 
+                            <div class='item-text'>
+                                <strong>Reclusion and Death</strong>
+                                <div class='place'>Lasserre Ariège,France</div>
+                            </div>
+                        </div>
+                    </div>
                     <div class='articles-container'>
                         <div class='article-item'>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque blandit erat lectus, ut vulputate metus molestie a. Fusce suscipit tincidunt neque vel dignissim. Fusce eu tellus turpis. Etiam mollis dolor quis neque euismod, et imperdiet metus blandit. Phasellus placerat a urna elementum mollis. Sed consectetur quam vel augue aliquet maximus. Mauris egestas placerat eros, nec tincidunt enim scelerisque quis. Proin bibendum elementum auctor. Nam vulputate lobortis lacus. Cras convallis felis orci, at mattis eros ullamcorper non. Quisque laoreet faucibus auctor. In dictum ut risus eget tincidunt.</p>
-                            <p>Morbi mattis vitae ligula a ultricies. Vivamus risus orci, sollicitudin nec ipsum eu, tincidunt laoreet ex. Phasellus finibus magna eu eros convallis placerat. Quisque tempor tempor purus, nec imperdiet nisl rutrum in. Quisque et semper urna. Duis iaculis urna et magna fermentum, vitae laoreet augue blandit. Phasellus sit amet felis feugiat, mollis nisl eu, hendrerit risus. Morbi varius maximus elit vel vehicula. Fusce eget vestibulum diam, dignissim rhoncus tortor. Nunc ac cursus quam. Vivamus commodo varius mauris, vel aliquam tortor volutpat sit amet. Integer porttitor semper mollis. Ut efficitur ligula id ligula cursus vestibulum. Nulla nec sagittis risus.</p>
-                        </div>
-                        <div class='article-item'>
                             <p>Grothendieck was born in Berlin to anarchist parents. His father, Alexander Schapiro, had Hasidic Jewish roots and had been imprisoned in Russia before moving to Germany in 1922, while his mother, Johanna Grothendieck, came from a Protestant family in Hamburg and worked as a journalist. Both had broken away from their early backgrounds in their teens. At the time of his birth, Grothendieck's mother was married to the journalist Johannes Raddatz and his birthname was initially recorded as "Alexander Raddatz." The marriage was dissolved in 1929 and Schapiro acknowledged his paternity, but never married Hanka.</p>
-                            <p>Grothendieck lived with his parents in Berlin until the end of 1933, when his father moved to Paris to evade Nazism, followed soon thereafter by his mother. They left Grothendieck in the care of Wilhelm Heydorn, a Lutheran pastor and teacher[16][17] in Hamburg. During this time, his parents took part in the Spanish Civil War, according to Winfried Scharlau, as non-combatant auxiliaries,[18] though others state that Sascha fought in the anarchist militia.</p>
+                            <p>Grothendieck lived with his parents in Berlin until the end of 1933, when his father moved to Paris to evade Nazism, followed soon thereafter by his mother. They left Grothendieck in the care of Wilhelm Heydorn, a Lutheran pastor and teacher in Hamburg. During this time, his parents took part in the Spanish Civil War, according to Winfried Scharlau, as non-combatant auxiliaries, though others state that Sascha fought in the anarchist militia.</p>
                         </div>
                         <div class='article-item'>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin sed turpis ut velit lobortis sagittis eu a nisi. Sed nibh quam, molestie ac turpis ac, sollicitudin tincidunt mauris. Quisque vestibulum magna nunc. Aliquam lobortis, libero a tincidunt auctor, augue nunc dapibus nibh, sit amet porttitor mi mi eget sapien. In tempor ac augue scelerisque condimentum. Maecenas sed ultricies nisi, eget egestas libero. Phasellus at consectetur quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-                            <p>Vestibulum congue pulvinar leo ac placerat. Praesent ultrices feugiat vehicula. Morbi eget tristique ligula, vitae bibendum leo. Integer convallis felis ut hendrerit commodo. Donec molestie, nisl nec iaculis egestas, ex orci consectetur metus, ac bibendum urna at.</p>
+                            <p>In May 1939, Grothendieck was put on a train in Hamburg for France. Shortly afterwards his father was interned in Le Vernet. He and his mother were then interned in various camps from 1940 to 1942 as "undesirable dangerous foreigners". The first was the Rieucros Camp, where his mother contracted the tuberculosis which eventually caused her death and where Alexander managed to attend the local school, at Mende. Once Alexander managed to escape from the camp, intending to assassinate Hitler. Later, his mother Hanka was transferred to the Gurs internment camp for the remainder of World War II. Alexander was permitted to live, separated from his mother, in the village of Le Chambon-sur-Lignon, sheltered and hidden in local boarding houses or pensions, though he occasionally had to seek refuge in the woods during Nazis raids, surviving at times without food or water for several days. His father was arrested under the Vichy anti-Jewish legislation, and then handed over by the French Vichy government to the Germans to be sent to be murdered at the Auschwitz concentration camp in 1942. In Chambon, Grothendieck attended the Collège Cévenol, a unique secondary school founded in 1938 by local Protestant pacifists and anti-war activists. Many of the refugee children hidden in Chambon attended Cévenol, and it was at this school that Grothendieck apparently first became fascinated with mathematics.</p>
                         </div>
                         <div class='article-item'>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum quam risus, condimentum posuere velit ornare aliquam. Nam hendrerit diam vel risus finibus, id varius dui congue. Donec condimentum in diam vel pulvinar. Morbi nisl nibh, efficitur vitae ante nec, malesuada suscipit lorem. Vestibulum fringilla tellus varius pharetra ullamcorper. Pellentesque pharetra elementum tortor, ac vulputate magna congue nec. Phasellus sit amet sodales velit, a dapibus dui.</p>
-                            <p>Fusce vulputate imperdiet orci, vel molestie justo ultricies ac. Fusce vitae finibus ex, euismod fringilla lorem. Maecenas ac sagittis elit. In vehicula elementum tellus a dictum. Nullam consequat, mauris ut elementum ultricies dui.</p>
+                            <p>After the war, the young Grothendieck studied mathematics in France, initially at the University of Montpellier where he did not initially perform well, failing such classes as astronomy. Working on his own, he rediscovered the Lebesgue measure. After three years of increasingly independent studies there, he went to continue his studies in Paris in 1948.</p>
+                            <p>Initially, Grothendieck attended Henri Cartan's Seminar at École Normale Supérieure, but he lacked the necessary background to follow the high-powered seminar. On the advice of Cartan and André Weil, he moved to the University of Nancy where he wrote his dissertation under Laurent Schwartz and Jean Dieudonné on functional analysis, from 1950 to 1953. At this time he was a leading expert in the theory of topological vector spaces. From 1953 to 1955 he moved to the University of São Paulo in Brazil, </p>
+                            <p>His first works on topological vector spaces in 1953 have been successfully applied to physics and computer science, culminating in a relation between Grothendieck inequality and the Einstein-Podolsky-Rosen paradox in quantum physics.</p>
                         </div>
                         <div class='article-item'>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis id nulla non diam consequat fringilla tempor id ligula. Pellentesque in lorem nisl. Phasellus aliquam hendrerit vehicula. Aenean sagittis est at posuere ultricies. Etiam ac ex sit amet eros congue interdum. Nunc quis congue libero, nec pharetra erat. Phasellus sollicitudin, dolor sed cursus consectetur, est mauris dictum turpis, at viverra urna augue a ipsum. Praesent id accumsan orci. Maecenas sit amet tortor purus. Sed dictum eros eu risus pellentesque, eu dictum risus efficitur. Mauris imperdiet turpis et libero semper, vel mattis leo pulvinar. Nulla eget tincidunt metus. Integer lacinia maximus sapien, sed rutrum eros rutrum non.</p>
-                            <p>Nunc vel pharetra ante, ut fringilla metus. Suspendisse ac lectus mauris. Morbi finibus eros sed ligula suscipit mattis. Etiam eu dui sed nulla consectetur placerat. Vestibulum semper lacus a purus tempor pretium. Aliquam erat volutpat. In hac habitasse platea dictumst. Mauris quis felis odio.</p>
-                            <p>Duis nulla magna, congue sit amet tempus et, vehicula quis dui. Pellentesque pellentesque justo lectus.</p>
+                            <p>In 1958, Grothendieck was installed at the Institut des hautes études scientifiques (IHÉS), a new privately funded research institute that, in effect, had been created for Jean Dieudonné and Grothendieck. Grothendieck attracted attention by an intense and highly productive activity of seminars there (de facto working groups drafting into foundational work some of the ablest French and other mathematicians of the younger generation). Grothendieck himself practically ceased publication of papers through the conventional, learned journal route. He was, however, able to play a dominant role in mathematics for around a decade, gathering a strong school.</p>
+                            <p>During this time, he had officially as students Michel Demazure (who worked on SGA3, on group schemes), Luc Illusie (cotangent complex), Michel Raynaud, Jean-Louis Verdier (cofounder of the derived category theory) and Pierre Deligne. Collaborators on the SGA projects also included Michael Artin (étale cohomology) and Nick Katz (monodromy theory and Lefschetz pencils). Jean Giraud worked out torsor theory extensions of nonabelian cohomology. Many others like David Mumford, Robin Hartshorne, Barry Mazur and C.P. Ramanujam were also involved.</p>
                         </div>
                         <div class='article-item'>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec consequat et massa nec convallis. Sed ullamcorper turpis sit amet lacus aliquam tincidunt. Pellentesque in nisl id risus viverra bibendum sed ut odio. Nunc placerat libero dolor, sed semper elit scelerisque imperdiet. Phasellus mollis odio in porttitor posuere. In a mauris pellentesque justo consectetur cursus. Aliquam eget viverra elit. Nulla tincidunt egestas odio euismod dictum. Maecenas sollicitudin ultrices efficitur. Nullam odio massa, consectetur at maximus eu, scelerisque finibus dolor. Morbi metus elit, mollis vitae neque non, tristique facilisis turpis. Duis aliquam blandit libero eu congue. Vivamus pulvinar purus et nulla tincidunt, eget porta dolor gravida. Pellentesque dapibus, enim a ornare condimentum, neque dui.</p>
+                            <p>Alexander Grothendieck's work during the "Golden Age" period at the IHÉS established several unifying themes in algebraic geometry, number theory, topology, category theory and complex analysis. His first discovery in algebraic geometry was the Grothendieck–Hirzebruch–Riemann–Roch theorem, a generalisation of the Hirzebruch–Riemann–Roch theorem proved algebraically; in this context he also introduced K-theory. Then, following the programme he outlined in his talk at the 1958 International Congress of Mathematicians, he introduced the theory of schemes, developing it in detail in his Éléments de géométrie algébrique and providing the new more flexible and general foundations for algebraic geometry that has been adopted in the field since that time. He went on to introduce the étale cohomology theory of schemes, providing the key tools for proving the Weil conjectures, as well as crystalline cohomology and algebraic de Rham cohomology to complement it. Closely linked to these cohomology theories, he originated topos theory as a generalisation of topology. He also provided an algebraic definition of fundamental groups of schemes and more generally the main structures of a categorical Galois theory. As a framework for his coherent duality theory he also introduced derived categories, which were further developed by Verdier.</p>
+                        </div>
+                        <div class='article-item'>
+                            <p>Grothendieck's political views were radical and pacifist, and he strongly opposed both United States intervention in Vietnam and Soviet military expansionism. He gave lectures on category theory in the forests surrounding Hanoi while the city was being bombed, to protest against the Vietnam War. He retired from scientific life around 1970, having found out that IHÉS was partly funded by the military. He returned to academia a few years later as a professor at the University of Montpellier.</p>
+                            <p>In 1970, Grothendieck, with two other mathematicians, Claude Chevalley and Pierre Samuel, created a political group called Survivre. The group published a bulletin and was dedicated to antimilitary and ecological issues, and also developed strong criticism of the indiscriminate use of science and technology. Grothendieck devoted the next three years to this group.</p>
+                            <p>Although Grothendieck continued with mathematical enquiries his standard mathematical career, for the most part, ended when he left the IHÉS. After leaving the IHÉS Grothendieck became a temporary professor at Collège de France for two years. He then became a professor at the University of Montpellier, where he became increasingly estranged from the mathematical community.</p>
+                        </div>
+                        <div class='article-item'>
+                            <p>While not publishing mathematical research in conventional ways during the 1980s, he produced several influential manuscripts with limited distribution, with both mathematical and biographical content.</p>
+                            <ul>
+                                <li>La Longue Marche à travers la théorie de Galois</li>
+                                <li>Esquisse d'un Programme</li>
+                                <li>Récoltes et semailles (Autobiographical)</li>
+                            </ul>
+                            <p>In 1988 Grothendieck declined the Crafoord Prize with an open letter to the media. He wrote that established mathematicians like himself had no need for additional financial support and criticized what he saw as the declining ethics of the scientific community, characterized by outright scientific theft that, according to him, had become commonplace and tolerated.</p>
+                            <p>Over 20,000 pages of Grothendieck's mathematical and other writings, held at the University of Montpellier, remain unpublished. They have been digitized for preservation and are freely available in open access through the Institut Montpelliérain Alexander Grothendieck portal.</p>
+                        </div>
+                        <div class='article-item'>
+                            <p>In 1991, Grothendieck moved to a new address which he did not provide to his previous contacts in the mathematical community. Very few people visited him afterward.</p>
+                            <p>In January 2010, Grothendieck wrote the letter "Déclaration d'intention de non-publication" to Luc Illusie, claiming that all materials published in his absence have been published without his permission. He asks that none of his work be reproduced in whole or in part and that copies of this work be removed from libraries.</p>
+                            <p>On 13 November 2014, aged 86, Grothendieck died in the hospital of Saint-Girons, Ariège.</p>
                         </div>
                     </div>
                 </section>
@@ -116,7 +141,6 @@
                 <div id='quote-container'> 
                     <p id='hero-quote'>It is in this gesture of "<span style='font-size: 1.2em; font-style:italic;'>going beyond</span>," to be something in oneself rather than the pawn of a consensus, the refusal to stay within a rigid circle that others have drawn around one-it is in this solitary act that one <em style='font-size: 1.2em;'>finds true creativity.</em> All others things follow as a matter of course.</p>
                     <div id='fake-carret'></div>
-
                     <div id=quote-citation-container>
                         <p id='quote-citation'><a href='https://en.wikipedia.org/wiki/Alexander_Grothendieck'>Alexander Grothendieck</a></p> 
                     </div>

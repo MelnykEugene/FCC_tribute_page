@@ -12,15 +12,13 @@ day 6 - scroll snap, display4
 day 7 - fadein animations for gradient,canvas and h1, netlify, carret on display4
 day 8 - progress on timeline list, got an idea for two-column list-text presentation
 day 9 - jquery list item highlights, almost figured out article animation
+day 10 - cleaned up code, added real text
 
 Questions to ask:
 
 Structure of css? 
-use of selectors.
-Is the choice of classes vs ids in the giving settings reasonable?
+use of selectors. Is the choice of classes vs ids in the giving settings reasonable?
 I might be ignoring some inheritance/duplicating lines. Other glaring css mistakes?
-excessive use of ids?
+
 is the way of centering optimal/conventional?
 Any glaringgly unnecesary use of divs?
-How to add responsiveness
-Is inline span-styling of certain words reasonable?
